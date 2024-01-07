@@ -1,0 +1,271 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.footer {
+  bottom: 0;
+  position: fixed;
+  width:100%;
+  height: 30px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.back{
+  background-color: #282c34;
+  padding-bottom: 30%;
+  /* height: 980px; */
+}
+
+
+
+.list{
+  color: #F4CE14;
+  margin-top: 30px;
+}
+
+.row th{
+  color: #F4CE14;
+}
+
+.row td{
+  color: white;
+}
+
+.rows{
+  margin: 10px;
+  display: flex;
+}
+
+.kopas{
+  background: none;
+  color: #23d300;
+  border: none;
+  margin: 5px
+}
+
+.copas{
+  background: none;
+  color: red;
+  border: none;
+}
+
+.xopas{
+  background-color: #282c34;
+  color: #F4CE14;
+  border: none;
+  font-size: 20px;
+}
+
+.navbar {
+  background-color: #F4CE14;
+  height: 80px;
+}
+
+.navbar-edi {
+  color: #282c34;
+  font-size: 25px;
+  padding-left: 700px;
+}
+
+.navbar-edo :hover, .navbar-eda :hover{
+  color: #F5F7F8;
+}
+
+.navbar-edo{
+  color: #282c34;
+  font-size: 25px;
+  margin: 40px;
+  height: 60px;
+  width: 60px;
+}
+
+.navbar-eda {
+  font-size: 25px;
+  color: #F4CE14;
+  padding: 2px 7px 2px 7px;
+  border-radius: 50%;
+  background-color: #282c34;
+}
+
+.cari input{
+  border: 4px solid #F4CE14;
+  border-radius: 5px;
+  color: #282c34;
+}
+
+.tabel{
+  background-color: #F4CE14;
+  padding: 30px;
+  color: #282c34;
+}
+
+
+.judul{
+  color: #F4CE14;
+}
+
+.view {
+  background-color: #F4CE14;
+  color: #282c34;
+  padding: 30px;
+}
+/* Add this CSS for a responsive navbar */
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-toggler {
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  background-color: #F4CE14;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    background-color: #282c34;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+
+  .navbar-nav.show {
+    display: flex;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-collapse {
+    display: none;
+  }
+
+  .navbar-brand,
+  .navbar-toggler {
+    color: #F4CE14;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column; /* Mengatur tata letak kolom pada layar kecil */
+    align-items: center; /* Mengatur tata letak tengah pada layar kecil */
+  }
+
+  .cari input {
+    width: 100%; /* Menyesuaikan lebar input pada layar kecil */
+    margin-bottom: 10px; /* Menambah margin bawah pada layar kecil */
+  }
+
+  .add {
+    margin-left: 0; /* Menyusun tombol tambah di tengah pada layar kecil */
+  }
+
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.table th,
+.table td {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .table {
+    overflow-x: auto;
+    display: block;
+  }
+
+  .table thead,
+  .table tbody,
+  .table th,
+  .table td,
+  .table tr {
+    display: block;
+  }
+
+  .table thead {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .table tr {
+    margin-bottom: 0.625rem;
+    background-color: #282c34;
+  }
+
+  .table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem;
+    text-align: left;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 0.625rem;
+  }
+}
